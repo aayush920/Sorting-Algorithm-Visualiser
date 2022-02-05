@@ -17,27 +17,29 @@
     <h1 class="page-title">Sorting Visualizer
         <img class="image-1" src="images/img2.png" alt="image not found">
     </h1>
-    <nav class="navbar row">
-        <div id="new-array" class="newArray">
-            <button type="button" class="btn btn-outline-success btn-info btn-lg nav-buttons array-gen-button">New Array</button>
-        </div>
-        <div class="sliders" id="input">
-            <span id="size-slider" class="size-btn">Size
-                <input id="array-size" type="range" min="5" max="100" value="30" step="1">
-            </span>
-            <span id="speed-slider">Speed
-                <input id="speed-value" type="range" min="15" max="400" step="10" value="50">
-            </span>
-        </div>
-
-        <div class="sorting-buttons">
-            <button type="button" class="btn btn-outline-success btn-info btn-lg nav-buttons quick">Quicksort</button>
-            <button type="button" class="btn btn-outline-success btn-info btn-lg nav-buttons merge">Merge Sort</button>
-            <button type="button" class="btn btn-outline-success btn-info btn-lg nav-buttons bubble">Bubble Sort</button>
-            <button type="button" class="btn btn-outline-success btn-info btn-lg nav-buttons selection">Selection Sort</button>
-            <button type="button" class="btn btn-outline-success btn-info btn-lg nav-buttons insertion">Insertion Sort</button>
-        </div>
-    </nav>
+    <div class="flex-buttons">
+        <nav class="navbar row">
+            <div id="new-array" class="newArray flex-button-item">
+                <button type="button" class="btn btn-outline-success btn-info btn-lg nav-buttons array-gen-button">New Array</button>
+            </div>
+            <div class="sliders" id="input">
+                <div id="size-slider" class="size-btn flex-button-item">Size
+                    <input id="array-size" type="range" min="5" max="100" value="30" step="1">
+                </div>
+                <div id="speed-slider" class="flex-button-item">Speed
+                    <input id="speed-value" type="range" min="15" max="400" step="10" value="50">
+                </div>
+            </div>
+    
+            <div class="sorting-buttons ">
+                <button type="button" class="btn btn-outline-success btn-info btn-lg nav-buttons quick flex-button-item">Quicksort</button>
+                <button type="button" class="btn btn-outline-success btn-info btn-lg nav-buttons merge flex-button-item">Merge Sort</button>
+                <button type="button" class="btn btn-outline-success btn-info btn-lg nav-buttons bubble flex-button-item">Bubble Sort</button>
+                <button type="button" class="btn btn-outline-success btn-info btn-lg nav-buttons selection flex-button-item">Selection Sort</button>
+                <button type="button" class="btn btn-outline-success btn-info btn-lg nav-buttons insertion flex-button-item">Insertion Sort</button>
+            </div>
+        </nav>
+    </div>
 </header>
 <body class="p-3 mb-2 bg-dark text-white">
     <div id="array-bars" class="flex-container"></div>

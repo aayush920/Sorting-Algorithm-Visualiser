@@ -53,7 +53,7 @@ function pause(time){
 let arraySize=document.querySelector("#array-size");
 
 arraySize.addEventListener('input',function(){
-    createNewArray(parseInt(arraySize.value));
+    createArray(parseInt(arraySize.value));
 })
 let delay=300;
 //speed of bars 
