@@ -82,7 +82,6 @@
     width: 100%;
     height: 500px;
     justify-content: center;
-    align-items: baseline;
     transition: 2s all ease;
 }
 
