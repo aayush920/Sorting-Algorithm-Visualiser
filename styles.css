@@ -103,16 +103,40 @@
     vertical-align: middle;
 }
 
-@media screen and (min-width:200px),(max-width: 600px) {
+@media screen and (max-width: 600px) {
     .flex-container{
         margin-top: 20px;
-        display: inline-flex;
+        display: flex;
         justify-content: center;
         /* width:fit-content; */
     }
-
+        
     .btn-lg{
         font-size: 15px;
+        padding:5px;
+        font-size:13px;
+        margin:1px;
+    }
+    
+    .flex-buttons{
+        margin-top: 30px;
+        display:flex;
+        flex-wrap:wrap;
+    }   
+
+    .sliders{
+        overflow:hidden;
+        width: 290px;
+        font-size:13px;
+    }
+
+    .image-1{
+        width:0;
+    }
+
+    #speed-slider,#size-slider{
+        font-size:20px;
+        text-align:center;
     }
 }
     
